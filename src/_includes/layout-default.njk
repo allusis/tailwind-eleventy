@@ -1,0 +1,21 @@
+{% import "theme.njk" as theme %}
+<!DOCTYPE html>
+<html lang="{{ metadata.siteLanguageAbbr }}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <head>
+    {% include "meta.njk" %}
+    {% include "favicon.njk" %}
+    <link rel="stylesheet" href="/css/style.css"/>
+    <script src="js/head-scripts.js"></script>
+  </head>
+  <body class="{{ theme.bodyBg }}">
+    <div class="flex flex-col min-h-screen">
+      <div>
+        {{ content | safe }}
+      </div>
+      <footer class="py-4 mt-auto">
+        <div class="text-xs leading-5 text-center opacity-50">&copy; <span id="year"></span> {{ metadata.siteName }} &middot; All rights reserved.<script>document.getElementById("year").innerHTML = new Date().getFullYear();</script></div>
+      </footer>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

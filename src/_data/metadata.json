@@ -1,0 +1,17 @@
+{
+  "siteName": "Sample",
+  "siteDescription": "This is a sample site description",
+  "prodUrl": "",
+  "siteLanguageAbbr": "en",
+  "siteLanguage": "English",
+  "publisherName": "Sample Publisher",
+  "publisherLogo": "/images/logo.png",
+  "ogType": "website",
+  "socialImg": "/images/social.png",
+  "corpStreetAddress": "1234 Street Address",
+  "corpCity": "City",
+  "corpState": "NY",
+  "corpPostal": "12345",
+  "corpPhone": "+1 888-888-8888",
+  "corpEmail": "email@domain.com"
+}

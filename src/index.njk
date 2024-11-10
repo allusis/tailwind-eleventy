@@ -1,0 +1,12 @@
+---
+layout: layout-default.njk
+title: Home
+primaryHeading:  Hello
+introContent: This is your sample page
+---
+{% import "theme.njk" as theme %}
+
+<div class="{{ theme.containerDefault }} py-24">
+  <h1>{{ primaryHeading }}</h1>
+  <p>{{ introContent }}</p>
+</div>

@@ -1,0 +1,16 @@
+{
+  "name": "eleventy-tailwind-boilerplate",
+  "scripts": {
+    "dev": "ENV=dev eleventy --serve & npx tailwindcss -i ./src/css/style.css -c tailwind.config.js -o ./css/style.css --watch",
+    "debug": "DEBUG=* npx @11ty/eleventy",
+    "build": "eleventy & npx tailwindcss -i ./src/css/style.css -c tailwind.config.js -o ./css/style.css",
+    "build-prod": "ENV=prod eleventy & npx tailwindcss -i ./src/css/style.css -c tailwind.config.js -o ./css/style.css",
+    "start": "http-server"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@tailwindcss/forms": "^0.5.3",
+    "http-server": "^14.1.1",
+    "tailwindcss": "^3.4.1"
+  }
+}
