@@ -1,7 +1,7 @@
 const fs = import("fs");
-const NOT_FOUND_PATH = "/404.html";
+const NOT_FOUND_PATH = "/public/404.html";
 
-export default function (eleventyConfig) {
+export default async function(eleventyConfig) {
 
   eleventyConfig.addWatchTarget('tailwind.config.js');
   eleventyConfig.addWatchTarget('tailwind.css');
@@ -56,7 +56,7 @@ export default function (eleventyConfig) {
 export const config = {
   dir: {
     input: "src",
-    output: "./",
+    output: "public",
     includes: "/_includes",
     data: "_data"
   }

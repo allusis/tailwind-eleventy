@@ -1,12 +1,49 @@
 ---
-layout: layout-default.njk
+layout: layout-sidebar.njk
 title: Home
-primaryHeading:  Hello
-introContent: This is your sample page
 ---
 {% import "theme.njk" as theme %}
 
-<div class="{{ theme.containerDefault }} py-24">
-  <h1>{{ primaryHeading }}</h1>
-  <p>{{ introContent }}</p>
+
+<div class="space-y-8">
+  <h1 class="max-w-2xl text-3xl font-semibold tracking-tight text-balance">Dashboard</h1>
+  <div class="grid grid-cols-4 gap-4">
+    <button class="{{ theme.btnPrimary }} {{ theme.btnBig }}">Push It </button>
+    <button class="{{ theme.btnPrimary }} {{ theme.btnBig }}">Press It</button>
+    <button class="{{ theme.btnPrimary }} {{ theme.btnBig }}">Smash It</button>
+    <button class="{{ theme.btnPrimary }} {{ theme.btnBig }}">Pound It</button>
+    <button class="{{ theme.btnPrimary }} {{ theme.btnBig }}">Click It</button>
+  </div>
 </div>
+
+<script src="/node_modules/chart.js/dist/chart.umd.js"></script>
+<script>
+  const config = {
+    type: 'polarArea',
+    data: data,
+    options: {
+      responsive: true,
+      scales: {
+        r: {
+          pointLabels: {
+            display: true,
+            centerPointLabels: true,
+            font: {
+              size: 18
+            }
+          }
+        }
+      },
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+        title: {
+          display: true,
+          text: 'Chart.js Polar Area Chart With Centered Point Labels'
+        }
+      }
+    },
+  };
+</script>
+
