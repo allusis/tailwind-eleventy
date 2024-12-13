@@ -2,7 +2,7 @@
   "type": "module",
   "name": "eleventy-tailwind-boilerplate",
   "scripts": {
-    "dev": "ENV=dev eleventy --serve & npx tailwindcss -i ./src/css/style.css -c tailwind.config.js -o ./public/css/style.css --watch",
+    "dev": "ENV=dev eleventy --serve & npx tailwindcss -i ./src/css/style.css --watch -c tailwind.config.js -o ./public/css/style.css",
     "debug": "DEBUG=* npx @11ty/eleventy",
     "build": "eleventy & npx tailwindcss -i ./src/public/css/style.css -c tailwind.config.js -o ./public/css/style.css",
     "build-prod": "ENV=prod eleventy & npx tailwindcss -i ./src/css/style.css -c tailwind.config.js -o ./public/css/style.css",
